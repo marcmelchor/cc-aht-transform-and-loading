@@ -7,9 +7,17 @@
     "dev": "nodemon build/index.js",
     "start": "npm run tsc && node build/index.js",
     "tsc": "rm -rf build/ && tsc && rm -rf build/__tests__",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles"
   },
-  "keywords": ["EtLT-DAG", "Mini Transform", "Sink", "Node", "express", "REST", "API"],
+  "keywords": [
+    "EtLT-DAG",
+    "Mini Transform",
+    "Sink",
+    "Node",
+    "express",
+    "REST",
+    "API"
+  ],
   "author": "Marc Melchor <marc.melchor@outlook.com>",
   "license": "ISC",
   "devDependencies": {
