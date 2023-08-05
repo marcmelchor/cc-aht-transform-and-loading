@@ -1,0 +1,29 @@
+{
+  "name": "cc-aht-transform-and-load",
+  "version": "0.0.1",
+  "description": "In the EtLT Process Flow, this will be the 'Mini Transform' and 'Sink' in the EtLT-DAG",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon build/index.js",
+    "start": "npm run tsc && node build/index.js",
+    "tsc": "rm -rf build/ && tsc && rm -rf build/__tests__",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["EtLT-DAG", "Mini Transform", "Sink", "Node", "express", "REST", "API"],
+  "author": "Marc Melchor <marc.melchor@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.3",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
