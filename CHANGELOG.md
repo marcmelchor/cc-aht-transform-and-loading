@@ -15,3 +15,10 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Added testing functionalities
+
+## [0.2.0] --2023.08.06
+
+### Added
+
+- `Authorization` middleware.
+- Integration functionality between the service `Mini Transform & Load` and `Source`.
