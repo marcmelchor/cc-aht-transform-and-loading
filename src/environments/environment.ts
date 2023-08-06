@@ -1,5 +1,5 @@
 export const environment = {
-  authTransformAndSinkToken: 'YM%Ln#c7Bg94MyAHrs$n4DQnjk$$vErH',
+  authTransformAndSinkToken: 'QBY!qDAuuGHJ8T@b7uga#yvV^PKRYZWz',
   port: 4001,
   production: false,
 };
