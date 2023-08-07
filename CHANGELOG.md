@@ -22,3 +22,14 @@ All notable changes to this project will be documented in this file.
 
 - `Authorization` middleware.
 - Integration functionality between the service `Mini Transform & Load` and `Source`.
+
+
+## [0.3.0] --2023-08-07
+
+## Added
+
+- Mini Transform function.
+- Data Cleansing
+- Data Governance
+- Sink data
+- README file

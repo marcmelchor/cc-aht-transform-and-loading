@@ -1,10 +1,15 @@
 import { Request, Response } from 'express';
 
+import { miniTransform } from '../services/mini-transformation';
+import { businessTransit } from '../services/sink-data.service';
+import { environment } from '../environments/environment';
+import { Producer } from '../models/producer.model';
+
+
 export const transformAndLoad = async (req: Request, res: Response): Promise<Response> => {
-  console.log('Transform and Load', req.body);
   try {
-    // TODO: Make the 'Mini Transformation'
-    // TODO: Store data in Data Wear House (DWH) 'Sink'
+    const body: Producer = await miniTransform(req.body);
+    await businessTransit(environment.businessTransitToken, body);
     return res.json({message: 'Transform and Sink Data'}).end();
   } catch (error: any) {
     console.log(error);
