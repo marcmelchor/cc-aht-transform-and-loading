@@ -1,6 +1,6 @@
 {
   "name": "cc-aht-transform-and-load",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "In the EtLT Process Flow, this will be the 'Mini Transform' and 'Sink' in the EtLT-DAG",
   "main": "index.js",
   "scripts": {
